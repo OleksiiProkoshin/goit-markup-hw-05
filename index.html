@@ -21,8 +21,9 @@
             <nav class="list page-nav">
                 <a class="web link logo" href="./index.html">web<span class="studio">Studio</span></a>
                 <ul class="list menu-list">
-                    <li class="menu-link-item"><a class="menu-link link" href="./index.html">Studio</a></li>
-                    <li class="menu-link-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="menu-link-item"><a class="menu-link link current" href="./index.html">Studio</a></li>
+                    <li class="menu-link-item"><a class="menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
                     <li class="menu-link-item"><a class="menu-link link" href="">Contacts</a></li>
                 </ul>
             </nav>
@@ -38,7 +39,7 @@
     <main>
         <section class="section-one">
             <h1 class="hero">Effective Solutions for Your Business</h1>
-            <button class="order-service-button" type="button">Order Service</button>
+            <button class="order-service-button" type="button" data-modal-open>Order Service</button>
         </section>
 
         <section class="section section-two">
@@ -302,6 +303,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg width="8" height="8" class="modal-close-btn-icon">
+                    <use href="./images/icons.svg#close-btn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
