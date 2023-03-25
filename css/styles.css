@@ -373,7 +373,7 @@ img {
 }
 
 .customers-list-item {
-    flex-basis: calc((100%-120px)/6);
+    flex-basis: calc((100% - 120px)/6);
 }
 
 .customers-list-link {
@@ -488,13 +488,15 @@ img {
 }
 
 /* portfolio */
+.portfolio {
+    padding-top: 96px;
+}
 
 .buttons-filter-list {
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
-    padding-top: 96px;
 }
 
 .button-filter {
@@ -549,7 +551,6 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 48px 24px;
-    padding-bottom: 120px;
 }
 
 .img-info {
